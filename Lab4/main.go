@@ -14,13 +14,13 @@ import (
 
 type SharkAttack struct {
 	ID            int    `json:"id"`
+	Date		string	`json:"date"`
 	Country       string `json:"country"`
 	Area          string `json:"area"`
 	Activity      string `json:"activity"`
 	Age           string `json:"age"`
-	Gender        string `json:"gender"`
-	Year          string `json:"year"`
-}
+	Sex        string `json:"sex"`
+	}
 
 var (
 	posts   = make(map[int]SharkAttack)
